@@ -1,0 +1,1251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.6 on win32)" generated="20220131 15:09:12.508" rpa="false" schemaversion="2">
+<suite id="s1" name="Index" source="C:\development\robot-scripts\chaldal_ecom\tests\Index.robot">
+<test id="s1-t1" name="A user should be able to navigate to chaldal home page (No Signin)">
+<kw name="Start Web Test" library="Open_Browser" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220131 15:09:12.868" level="INFO">Opening browser 'gc' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220131 15:09:12.868" endtime="20220131 15:09:14.286"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220131 15:09:14.287" endtime="20220131 15:09:14.401"/>
+</kw>
+<status status="PASS" starttime="20220131 15:09:12.868" endtime="20220131 15:09:14.402"/>
+</kw>
+<kw name="Navigate to home page" library="Functional_Keywords">
+<kw name="Home Page" library="Open_Home_Page">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220131 15:09:14.404" level="INFO">Opening url 'https://www.chaldal.com/'</msg>
+<status status="PASS" starttime="20220131 15:09:14.403" endtime="20220131 15:09:19.645"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:09:20.655" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:09:19.646" endtime="20220131 15:09:20.655"/>
+</kw>
+<status status="PASS" starttime="20220131 15:09:14.403" endtime="20220131 15:09:20.656"/>
+</kw>
+<kw name="Page Load Verification" library="Open_Home_Page">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:09:22.671" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220131 15:09:20.657" endtime="20220131 15:09:22.672"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Sign in</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220131 15:09:22.672" endtime="20220131 15:09:22.722"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:09:23.739" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:09:22.723" endtime="20220131 15:09:23.739"/>
+</kw>
+<status status="PASS" starttime="20220131 15:09:20.656" endtime="20220131 15:09:23.739"/>
+</kw>
+<status status="PASS" starttime="20220131 15:09:14.402" endtime="20220131 15:09:23.739"/>
+</kw>
+<kw name="End Web Test" library="Open_Browser" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220131 15:09:23.739" endtime="20220131 15:09:25.998"/>
+</kw>
+<status status="PASS" starttime="20220131 15:09:23.739" endtime="20220131 15:09:25.998"/>
+</kw>
+<status status="PASS" starttime="20220131 15:09:12.868" endtime="20220131 15:09:25.998"/>
+</test>
+<test id="s1-t2" name="A user should be able to Signin to chaldal home page">
+<kw name="Start Web Test" library="Open_Browser" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220131 15:09:25.998" level="INFO">Opening browser 'gc' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220131 15:09:25.998" endtime="20220131 15:09:27.262"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220131 15:09:27.263" endtime="20220131 15:09:27.384"/>
+</kw>
+<status status="PASS" starttime="20220131 15:09:25.998" endtime="20220131 15:09:27.384"/>
+</kw>
+<kw name="Click Signin Button" library="Signin">
+<kw name="Navigate to home page" library="Functional_Keywords">
+<kw name="Home Page" library="Open_Home_Page">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220131 15:09:27.384" level="INFO">Opening url 'https://www.chaldal.com/'</msg>
+<status status="PASS" starttime="20220131 15:09:27.384" endtime="20220131 15:09:36.863"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:09:37.879" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:09:36.864" endtime="20220131 15:09:37.879"/>
+</kw>
+<status status="PASS" starttime="20220131 15:09:27.384" endtime="20220131 15:09:37.879"/>
+</kw>
+<kw name="Page Load Verification" library="Open_Home_Page">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:09:39.891" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220131 15:09:37.879" endtime="20220131 15:09:39.891"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Sign in</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220131 15:09:39.891" endtime="20220131 15:09:39.926"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:09:40.935" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:09:39.926" endtime="20220131 15:09:40.935"/>
+</kw>
+<status status="PASS" starttime="20220131 15:09:37.879" endtime="20220131 15:09:40.935"/>
+</kw>
+<status status="PASS" starttime="20220131 15:09:27.384" endtime="20220131 15:09:40.935"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Signin_Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220131 15:09:40.935" level="INFO">Clicking button 'xpath=//div[5]/button'.</msg>
+<status status="PASS" starttime="20220131 15:09:40.935" endtime="20220131 15:09:41.179"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:09:44.179" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220131 15:09:41.179" endtime="20220131 15:09:44.179"/>
+</kw>
+<status status="PASS" starttime="20220131 15:09:27.384" endtime="20220131 15:09:44.179"/>
+</kw>
+<kw name="End Web Test" library="Open_Browser" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220131 15:09:44.179" endtime="20220131 15:09:46.721"/>
+</kw>
+<status status="PASS" starttime="20220131 15:09:44.179" endtime="20220131 15:09:46.721"/>
+</kw>
+<status status="PASS" starttime="20220131 15:09:25.998" endtime="20220131 15:09:46.721"/>
+</test>
+<test id="s1-t3" name="A user should be able to Search Any Item (No Signin)">
+<kw name="Start Web Test" library="Open_Browser" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220131 15:09:46.721" level="INFO">Opening browser 'gc' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220131 15:09:46.721" endtime="20220131 15:09:48.072"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220131 15:09:48.073" endtime="20220131 15:09:48.190"/>
+</kw>
+<status status="PASS" starttime="20220131 15:09:46.721" endtime="20220131 15:09:48.191"/>
+</kw>
+<kw name="Search For Product" library="Functional_Keywords">
+<kw name="Navigate to home page" library="Functional_Keywords">
+<kw name="Home Page" library="Open_Home_Page">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220131 15:09:48.193" level="INFO">Opening url 'https://www.chaldal.com/'</msg>
+<status status="PASS" starttime="20220131 15:09:48.192" endtime="20220131 15:09:54.241"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:09:55.251" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:09:54.242" endtime="20220131 15:09:55.251"/>
+</kw>
+<status status="PASS" starttime="20220131 15:09:48.192" endtime="20220131 15:09:55.251"/>
+</kw>
+<kw name="Page Load Verification" library="Open_Home_Page">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:09:57.252" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220131 15:09:55.251" endtime="20220131 15:09:57.252"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Sign in</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220131 15:09:57.253" endtime="20220131 15:09:57.282"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:09:58.283" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:09:57.282" endtime="20220131 15:09:58.283"/>
+</kw>
+<status status="PASS" starttime="20220131 15:09:55.251" endtime="20220131 15:09:58.283"/>
+</kw>
+<status status="PASS" starttime="20220131 15:09:48.192" endtime="20220131 15:09:58.283"/>
+</kw>
+<kw name="Search Product" library="Search_Product">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${search_bar}</arg>
+<arg>${searched_item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 15:09:58.283" level="INFO">Typing text 'egg' into text field 'name=search_term_string'.</msg>
+<status status="PASS" starttime="20220131 15:09:58.283" endtime="20220131 15:09:58.396"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:10:00.402" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220131 15:09:58.397" endtime="20220131 15:10:00.402"/>
+</kw>
+<status status="PASS" starttime="20220131 15:09:58.283" endtime="20220131 15:10:00.402"/>
+</kw>
+<kw name="Verify Search Compilation" library="Search_Product">
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:10:01.417" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:10:00.403" endtime="20220131 15:10:01.417"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${SEARCH-RESULT_VERIFICATION_TEXT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220131 15:10:01.417" endtime="20220131 15:10:01.449"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:10:02.460" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:10:01.449" endtime="20220131 15:10:02.460"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:00.402" endtime="20220131 15:10:02.461"/>
+</kw>
+<status status="PASS" starttime="20220131 15:09:48.191" endtime="20220131 15:10:02.461"/>
+</kw>
+<kw name="End Web Test" library="Open_Browser" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220131 15:10:02.462" endtime="20220131 15:10:04.877"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:02.462" endtime="20220131 15:10:04.877"/>
+</kw>
+<status status="PASS" starttime="20220131 15:09:46.721" endtime="20220131 15:10:04.877"/>
+</test>
+<test id="s1-t4" name="Verify Searched Product Count">
+<kw name="Start Web Test" library="Open_Browser" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220131 15:10:04.877" level="INFO">Opening browser 'gc' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220131 15:10:04.877" endtime="20220131 15:10:06.264"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220131 15:10:06.264" endtime="20220131 15:10:06.386"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:04.877" endtime="20220131 15:10:06.386"/>
+</kw>
+<kw name="Search Result Product Count" library="Functional_Keywords">
+<kw name="Search For Product" library="Functional_Keywords">
+<kw name="Navigate to home page" library="Functional_Keywords">
+<kw name="Home Page" library="Open_Home_Page">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220131 15:10:06.388" level="INFO">Opening url 'https://www.chaldal.com/'</msg>
+<status status="PASS" starttime="20220131 15:10:06.388" endtime="20220131 15:10:12.792"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:10:13.804" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:10:12.792" endtime="20220131 15:10:13.804"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:06.388" endtime="20220131 15:10:13.804"/>
+</kw>
+<kw name="Page Load Verification" library="Open_Home_Page">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:10:15.815" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220131 15:10:13.804" endtime="20220131 15:10:15.815"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Sign in</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220131 15:10:15.815" endtime="20220131 15:10:15.853"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:10:16.867" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:10:15.854" endtime="20220131 15:10:16.867"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:13.804" endtime="20220131 15:10:16.867"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:06.387" endtime="20220131 15:10:16.867"/>
+</kw>
+<kw name="Search Product" library="Search_Product">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${search_bar}</arg>
+<arg>${searched_item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 15:10:16.867" level="INFO">Typing text 'egg' into text field 'name=search_term_string'.</msg>
+<status status="PASS" starttime="20220131 15:10:16.867" endtime="20220131 15:10:16.980"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:10:18.994" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220131 15:10:16.980" endtime="20220131 15:10:18.994"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:16.867" endtime="20220131 15:10:18.994"/>
+</kw>
+<kw name="Verify Search Compilation" library="Search_Product">
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:10:20.005" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:10:18.995" endtime="20220131 15:10:20.005"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${SEARCH-RESULT_VERIFICATION_TEXT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220131 15:10:20.006" endtime="20220131 15:10:20.031"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:10:21.032" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:10:20.031" endtime="20220131 15:10:21.032"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:18.995" endtime="20220131 15:10:21.032"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:06.387" endtime="20220131 15:10:21.032"/>
+</kw>
+<kw name="Verify Product Count" library="Search_Product">
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:10:22.038" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:10:21.033" endtime="20220131 15:10:22.038"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,120)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220131 15:10:22.040" level="INFO">Executing JavaScript:
+window.scrollTo(0,120)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220131 15:10:22.039" endtime="20220131 15:10:22.055"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:10:23.071" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:10:22.056" endtime="20220131 15:10:23.071"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${xpath_search_count}</var>
+<arg>${products_returned_after_search-xpath}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220131 15:10:23.109" level="INFO">${xpath_search_count} = 52</msg>
+<status status="PASS" starttime="20220131 15:10:23.072" endtime="20220131 15:10:23.109"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Total Search Results in the webpage are = ${xpath_search_count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220131 15:10:23.110" endtime="20220131 15:10:23.111"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${xpath_search_count} &gt;= ${expected_product_count}</arg>
+<arg>Keyword_1</arg>
+<arg>ELSE IF</arg>
+<arg>${xpath_search_count} &lt; ${expected_product_count}</arg>
+<arg>Keyword_2</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Keyword_1" library="Search_Product">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Found more than 10 search results.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220131 15:10:23.113" endtime="20220131 15:10:23.113"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:23.112" endtime="20220131 15:10:23.114"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:23.112" endtime="20220131 15:10:23.114"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:21.033" endtime="20220131 15:10:23.114"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:06.387" endtime="20220131 15:10:23.114"/>
+</kw>
+<kw name="End Web Test" library="Open_Browser" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220131 15:10:23.115" endtime="20220131 15:10:25.369"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:23.115" endtime="20220131 15:10:25.369"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:04.877" endtime="20220131 15:10:25.369"/>
+</test>
+<test id="s1-t5" name="A user should be able to click a product and see details">
+<kw name="Start Web Test" library="Open_Browser" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220131 15:10:25.369" level="INFO">Opening browser 'gc' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220131 15:10:25.369" endtime="20220131 15:10:26.626"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220131 15:10:26.627" endtime="20220131 15:10:26.751"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:25.369" endtime="20220131 15:10:26.751"/>
+</kw>
+<kw name="Select a Product" library="Functional_Keywords">
+<kw name="Search For Product" library="Functional_Keywords">
+<kw name="Navigate to home page" library="Functional_Keywords">
+<kw name="Home Page" library="Open_Home_Page">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220131 15:10:26.751" level="INFO">Opening url 'https://www.chaldal.com/'</msg>
+<status status="PASS" starttime="20220131 15:10:26.751" endtime="20220131 15:10:31.585"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:10:32.599" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:10:31.585" endtime="20220131 15:10:32.599"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:26.751" endtime="20220131 15:10:32.599"/>
+</kw>
+<kw name="Page Load Verification" library="Open_Home_Page">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:10:34.609" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220131 15:10:32.599" endtime="20220131 15:10:34.609"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Sign in</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220131 15:10:34.609" endtime="20220131 15:10:34.632"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:10:35.645" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:10:34.632" endtime="20220131 15:10:35.645"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:32.599" endtime="20220131 15:10:35.645"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:26.751" endtime="20220131 15:10:35.645"/>
+</kw>
+<kw name="Search Product" library="Search_Product">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${search_bar}</arg>
+<arg>${searched_item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 15:10:35.645" level="INFO">Typing text 'egg' into text field 'name=search_term_string'.</msg>
+<status status="PASS" starttime="20220131 15:10:35.645" endtime="20220131 15:10:35.788"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:10:37.794" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220131 15:10:35.788" endtime="20220131 15:10:37.794"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:35.645" endtime="20220131 15:10:37.794"/>
+</kw>
+<kw name="Verify Search Compilation" library="Search_Product">
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:10:38.803" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:10:37.795" endtime="20220131 15:10:38.803"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${SEARCH-RESULT_VERIFICATION_TEXT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220131 15:10:38.803" endtime="20220131 15:10:38.831"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:10:39.832" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:10:38.831" endtime="20220131 15:10:39.832"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:37.795" endtime="20220131 15:10:39.832"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:26.751" endtime="20220131 15:10:39.832"/>
+</kw>
+<kw name="Click Product" library="Click_Single_Product">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${First_Item_In_Search_Result}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220131 15:10:39.834" level="INFO">Simulating Mouse Over on element 'xpath=//section/div[3]/div[2]/div[1]'.</msg>
+<status status="PASS" starttime="20220131 15:10:39.834" endtime="20220131 15:10:40.135"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:10:41.151" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:10:40.136" endtime="20220131 15:10:41.151"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${Click_Details}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220131 15:10:41.153" level="INFO">Clicking link 'xpath=//div[1]/div/div[5]/span/a[1]'.</msg>
+<status status="PASS" starttime="20220131 15:10:41.152" endtime="20220131 15:10:41.498"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:10:43.508" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220131 15:10:41.498" endtime="20220131 15:10:43.508"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:39.833" endtime="20220131 15:10:43.509"/>
+</kw>
+<kw name="Verify Search Compilation" library="Click_Single_Product">
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:10:44.526" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:10:43.510" endtime="20220131 15:10:44.526"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${Product_Details_Tab-Text}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220131 15:10:44.527" endtime="20220131 15:10:44.575"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:10:45.591" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:10:44.576" endtime="20220131 15:10:45.591"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:43.509" endtime="20220131 15:10:45.592"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:26.751" endtime="20220131 15:10:45.592"/>
+</kw>
+<kw name="End Web Test" library="Open_Browser" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220131 15:10:45.595" endtime="20220131 15:10:47.888"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:45.594" endtime="20220131 15:10:47.888"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:25.369" endtime="20220131 15:10:47.888"/>
+</test>
+<test id="s1-t6" name="A user should be able to add a product to cart">
+<kw name="Start Web Test" library="Open_Browser" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220131 15:10:47.888" level="INFO">Opening browser 'gc' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220131 15:10:47.888" endtime="20220131 15:10:49.263"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220131 15:10:49.264" endtime="20220131 15:10:49.394"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:47.888" endtime="20220131 15:10:49.394"/>
+</kw>
+<kw name="Add To Cart" library="Functional_Keywords">
+<kw name="Search For Product" library="Functional_Keywords">
+<kw name="Navigate to home page" library="Functional_Keywords">
+<kw name="Home Page" library="Open_Home_Page">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220131 15:10:49.397" level="INFO">Opening url 'https://www.chaldal.com/'</msg>
+<status status="PASS" starttime="20220131 15:10:49.396" endtime="20220131 15:10:54.548"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:10:55.550" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:10:54.548" endtime="20220131 15:10:55.551"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:49.396" endtime="20220131 15:10:55.552"/>
+</kw>
+<kw name="Page Load Verification" library="Open_Home_Page">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:10:57.565" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220131 15:10:55.554" endtime="20220131 15:10:57.565"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Sign in</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220131 15:10:57.565" endtime="20220131 15:10:57.602"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:10:58.613" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:10:57.602" endtime="20220131 15:10:58.613"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:55.553" endtime="20220131 15:10:58.613"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:49.396" endtime="20220131 15:10:58.613"/>
+</kw>
+<kw name="Search Product" library="Search_Product">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${search_bar}</arg>
+<arg>${searched_item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 15:10:58.613" level="INFO">Typing text 'egg' into text field 'name=search_term_string'.</msg>
+<status status="PASS" starttime="20220131 15:10:58.613" endtime="20220131 15:10:58.730"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:11:00.743" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220131 15:10:58.731" endtime="20220131 15:11:00.743"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:58.613" endtime="20220131 15:11:00.743"/>
+</kw>
+<kw name="Verify Search Compilation" library="Search_Product">
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:11:01.753" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:11:00.744" endtime="20220131 15:11:01.753"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${SEARCH-RESULT_VERIFICATION_TEXT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220131 15:11:01.753" endtime="20220131 15:11:01.785"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:11:02.798" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:11:01.785" endtime="20220131 15:11:02.798"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:00.744" endtime="20220131 15:11:02.799"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:49.395" endtime="20220131 15:11:02.799"/>
+</kw>
+<kw name="Add Product To Cart" library="Add_To_Cart">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${add_to_cart}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 15:11:02.802" level="INFO">Clicking element 'xpath=//div[3]/div[2]/div[1]/section'.</msg>
+<status status="PASS" starttime="20220131 15:11:02.801" endtime="20220131 15:11:03.089"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:11:05.097" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220131 15:11:03.089" endtime="20220131 15:11:05.097"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:02.799" endtime="20220131 15:11:05.098"/>
+</kw>
+<kw name="Add To Cart Verification" library="Add_To_Cart">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${Cart_Window-Text}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220131 15:11:05.101" endtime="20220131 15:11:05.154"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:11:06.162" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:11:05.155" endtime="20220131 15:11:06.162"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:05.099" endtime="20220131 15:11:06.163"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:49.395" endtime="20220131 15:11:06.163"/>
+</kw>
+<kw name="End Web Test" library="Open_Browser" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220131 15:11:06.166" endtime="20220131 15:11:08.458"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:06.165" endtime="20220131 15:11:08.458"/>
+</kw>
+<status status="PASS" starttime="20220131 15:10:47.888" endtime="20220131 15:11:08.458"/>
+</test>
+<test id="s1-t7" name="Verify Delivery Fee for Order more than 400 BDT">
+<kw name="Start Web Test" library="Open_Browser" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220131 15:11:08.458" level="INFO">Opening browser 'gc' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220131 15:11:08.458" endtime="20220131 15:11:09.831"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220131 15:11:09.831" endtime="20220131 15:11:09.960"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:08.458" endtime="20220131 15:11:09.961"/>
+</kw>
+<kw name="Delivery Fee for BDT &gt; 400" library="Functional_Keywords">
+<kw name="Add To Cart" library="Functional_Keywords">
+<kw name="Search For Product" library="Functional_Keywords">
+<kw name="Navigate to home page" library="Functional_Keywords">
+<kw name="Home Page" library="Open_Home_Page">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220131 15:11:09.963" level="INFO">Opening url 'https://www.chaldal.com/'</msg>
+<status status="PASS" starttime="20220131 15:11:09.963" endtime="20220131 15:11:14.478"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:11:15.501" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:11:14.478" endtime="20220131 15:11:15.501"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:09.963" endtime="20220131 15:11:15.501"/>
+</kw>
+<kw name="Page Load Verification" library="Open_Home_Page">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:11:17.501" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220131 15:11:15.501" endtime="20220131 15:11:17.501"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Sign in</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220131 15:11:17.501" endtime="20220131 15:11:17.517"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:11:18.524" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:11:17.517" endtime="20220131 15:11:18.524"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:15.501" endtime="20220131 15:11:18.524"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:09.962" endtime="20220131 15:11:18.524"/>
+</kw>
+<kw name="Search Product" library="Search_Product">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${search_bar}</arg>
+<arg>${searched_item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 15:11:18.524" level="INFO">Typing text 'egg' into text field 'name=search_term_string'.</msg>
+<status status="PASS" starttime="20220131 15:11:18.524" endtime="20220131 15:11:18.634"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:11:20.636" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220131 15:11:18.635" endtime="20220131 15:11:20.636"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:18.524" endtime="20220131 15:11:20.636"/>
+</kw>
+<kw name="Verify Search Compilation" library="Search_Product">
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:11:21.650" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:11:20.638" endtime="20220131 15:11:21.650"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${SEARCH-RESULT_VERIFICATION_TEXT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220131 15:11:21.650" endtime="20220131 15:11:21.680"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:11:22.690" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:11:21.680" endtime="20220131 15:11:22.690"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:20.637" endtime="20220131 15:11:22.691"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:09.962" endtime="20220131 15:11:22.691"/>
+</kw>
+<kw name="Add Product To Cart" library="Add_To_Cart">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${add_to_cart}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 15:11:22.694" level="INFO">Clicking element 'xpath=//div[3]/div[2]/div[1]/section'.</msg>
+<status status="PASS" starttime="20220131 15:11:22.693" endtime="20220131 15:11:22.971"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:11:24.977" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220131 15:11:22.971" endtime="20220131 15:11:24.977"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:22.692" endtime="20220131 15:11:24.978"/>
+</kw>
+<kw name="Add To Cart Verification" library="Add_To_Cart">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${Cart_Window-Text}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220131 15:11:24.979" endtime="20220131 15:11:25.039"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:11:26.040" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:11:25.039" endtime="20220131 15:11:26.040"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:24.978" endtime="20220131 15:11:26.041"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:09.962" endtime="20220131 15:11:26.041"/>
+</kw>
+<kw name="Increase Product Quantity in Cart" library="Add_To_Cart">
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>1</value>
+<value>5</value>
+<iter>
+<var name="${i}">1</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Cart_Up_Arrow}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 15:11:26.044" level="INFO">Clicking element 'xpath=//diV/div[2]/div[2]/div[1]/div/div[1]/div[1]'.</msg>
+<status status="PASS" starttime="20220131 15:11:26.043" endtime="20220131 15:11:26.300"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Added ${i} products to the bag!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220131 15:11:26.301" endtime="20220131 15:11:26.301"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:26.043" endtime="20220131 15:11:26.302"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Cart_Up_Arrow}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 15:11:26.302" level="INFO">Clicking element 'xpath=//diV/div[2]/div[2]/div[1]/div/div[1]/div[1]'.</msg>
+<status status="PASS" starttime="20220131 15:11:26.302" endtime="20220131 15:11:26.525"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Added ${i} products to the bag!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220131 15:11:26.525" endtime="20220131 15:11:26.527"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:26.302" endtime="20220131 15:11:26.527"/>
+</iter>
+<iter>
+<var name="${i}">3</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Cart_Up_Arrow}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 15:11:26.528" level="INFO">Clicking element 'xpath=//diV/div[2]/div[2]/div[1]/div/div[1]/div[1]'.</msg>
+<status status="PASS" starttime="20220131 15:11:26.527" endtime="20220131 15:11:26.745"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Added ${i} products to the bag!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220131 15:11:26.745" endtime="20220131 15:11:26.747"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:26.527" endtime="20220131 15:11:26.747"/>
+</iter>
+<iter>
+<var name="${i}">4</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Cart_Up_Arrow}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 15:11:26.748" level="INFO">Clicking element 'xpath=//diV/div[2]/div[2]/div[1]/div/div[1]/div[1]'.</msg>
+<status status="PASS" starttime="20220131 15:11:26.747" endtime="20220131 15:11:26.943"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Added ${i} products to the bag!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220131 15:11:26.944" endtime="20220131 15:11:26.944"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:26.747" endtime="20220131 15:11:26.945"/>
+</iter>
+<status status="PASS" starttime="20220131 15:11:26.042" endtime="20220131 15:11:26.945"/>
+</for>
+<status status="PASS" starttime="20220131 15:11:26.041" endtime="20220131 15:11:26.945"/>
+</kw>
+<kw name="Verify Less Delivery Fee" library="Add_To_Cart">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Delivery_Fee_In_Text}</var>
+<arg>${Reduced_Delivery_Fee-xpath}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220131 15:11:26.986" level="INFO">${Delivery_Fee_In_Text} = 9</msg>
+<status status="PASS" starttime="20220131 15:11:26.947" endtime="20220131 15:11:26.986"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:11:28.989" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220131 15:11:26.986" endtime="20220131 15:11:28.989"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Delivery Fee = ${Delivery_Fee_In_Text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220131 15:11:28.990" endtime="20220131 15:11:28.992"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>"${Delivery_Fee_In_Text}" == "9"</arg>
+<arg>Keyword_3</arg>
+<arg>ELSE IF</arg>
+<arg>"${Delivery_Fee_In_Text}" == "19"</arg>
+<arg>Keyword_4</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Keyword_3" library="Add_To_Cart">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Delivery Fee Reduced to BDT 9.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220131 15:11:28.996" endtime="20220131 15:11:28.996"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:28.994" endtime="20220131 15:11:28.996"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:28.992" endtime="20220131 15:11:28.997"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:11:31.004" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220131 15:11:28.997" endtime="20220131 15:11:31.004"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:26.946" endtime="20220131 15:11:31.005"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:09.961" endtime="20220131 15:11:31.005"/>
+</kw>
+<kw name="End Web Test" library="Open_Browser" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220131 15:11:31.008" endtime="20220131 15:11:33.266"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:31.007" endtime="20220131 15:11:33.266"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:08.458" endtime="20220131 15:11:33.266"/>
+</test>
+<test id="s1-t8" name="Click Category - &quot;Flash Sales&quot; and View The First Item on The Page">
+<kw name="Start Web Test" library="Open_Browser" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220131 15:11:33.266" level="INFO">Opening browser 'gc' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220131 15:11:33.266" endtime="20220131 15:11:34.536"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220131 15:11:34.536" endtime="20220131 15:11:34.655"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:33.266" endtime="20220131 15:11:34.655"/>
+</kw>
+<kw name="Click Category - &quot;Flash Sales&quot;" library="Functional_Keywords">
+<kw name="Navigate to home page" library="Functional_Keywords">
+<kw name="Home Page" library="Open_Home_Page">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220131 15:11:34.655" level="INFO">Opening url 'https://www.chaldal.com/'</msg>
+<status status="PASS" starttime="20220131 15:11:34.655" endtime="20220131 15:11:39.429"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:11:40.443" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:11:39.430" endtime="20220131 15:11:40.443"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:34.655" endtime="20220131 15:11:40.444"/>
+</kw>
+<kw name="Page Load Verification" library="Open_Home_Page">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:11:42.453" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220131 15:11:40.446" endtime="20220131 15:11:42.453"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Sign in</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220131 15:11:42.453" endtime="20220131 15:11:42.487"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:11:43.494" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:11:42.488" endtime="20220131 15:11:43.494"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:40.445" endtime="20220131 15:11:43.494"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:34.655" endtime="20220131 15:11:43.494"/>
+</kw>
+<kw name="Click Category - Flash Sales" library="Click_Product_Category">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${var_flash_sales}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220131 15:11:43.494" level="INFO">Clicking link 'link=Flash Sales'.</msg>
+<status status="PASS" starttime="20220131 15:11:43.494" endtime="20220131 15:11:43.875"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:11:44.891" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:11:43.875" endtime="20220131 15:11:44.891"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:43.494" endtime="20220131 15:11:44.891"/>
+</kw>
+<kw name="Click First Item On Product Results Page" library="Click_Product_Category">
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:11:45.900" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:11:44.891" endtime="20220131 15:11:45.900"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${First_Item_In_Category_Result}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220131 15:11:45.900" level="INFO">Simulating Mouse Over on element 'xpath=//section//div/section/div[2]/div/div[1]'.</msg>
+<status status="PASS" starttime="20220131 15:11:45.900" endtime="20220131 15:11:46.186"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${Click_Details}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220131 15:11:46.186" level="INFO">Clicking link 'xpath=//div[1]/div/div[5]/span/a[1]'.</msg>
+<status status="PASS" starttime="20220131 15:11:46.186" endtime="20220131 15:11:46.535"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:44.891" endtime="20220131 15:11:46.535"/>
+</kw>
+<kw name="Verify Search Compilation" library="Click_Single_Product">
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:11:47.552" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:11:46.537" endtime="20220131 15:11:47.552"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${Product_Details_Tab-Text}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220131 15:11:47.552" endtime="20220131 15:11:47.568"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:11:48.571" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:11:47.568" endtime="20220131 15:11:48.571"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:46.536" endtime="20220131 15:11:48.571"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:34.655" endtime="20220131 15:11:48.571"/>
+</kw>
+<kw name="End Web Test" library="Open_Browser" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220131 15:11:48.571" endtime="20220131 15:11:50.850"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:48.571" endtime="20220131 15:11:50.850"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:33.266" endtime="20220131 15:11:50.850"/>
+</test>
+<test id="s1-t9" name="A user should be able to add a Promo Code">
+<kw name="Start Web Test" library="Open_Browser" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220131 15:11:50.850" level="INFO">Opening browser 'gc' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220131 15:11:50.850" endtime="20220131 15:11:52.146"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220131 15:11:52.146" endtime="20220131 15:11:52.262"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:50.850" endtime="20220131 15:11:52.262"/>
+</kw>
+<kw name="Use Promo Code" library="Functional_Keywords">
+<kw name="Add To Cart" library="Functional_Keywords">
+<kw name="Search For Product" library="Functional_Keywords">
+<kw name="Navigate to home page" library="Functional_Keywords">
+<kw name="Home Page" library="Open_Home_Page">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220131 15:11:52.262" level="INFO">Opening url 'https://www.chaldal.com/'</msg>
+<status status="PASS" starttime="20220131 15:11:52.262" endtime="20220131 15:11:56.929"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:11:57.942" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:11:56.930" endtime="20220131 15:11:57.942"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:52.262" endtime="20220131 15:11:57.943"/>
+</kw>
+<kw name="Page Load Verification" library="Open_Home_Page">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:11:59.958" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220131 15:11:57.944" endtime="20220131 15:11:59.958"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Sign in</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220131 15:11:59.959" endtime="20220131 15:12:00.020"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:12:01.032" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:12:00.020" endtime="20220131 15:12:01.032"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:57.943" endtime="20220131 15:12:01.032"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:52.262" endtime="20220131 15:12:01.032"/>
+</kw>
+<kw name="Search Product" library="Search_Product">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${search_bar}</arg>
+<arg>${searched_item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 15:12:01.032" level="INFO">Typing text 'egg' into text field 'name=search_term_string'.</msg>
+<status status="PASS" starttime="20220131 15:12:01.032" endtime="20220131 15:12:01.135"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:12:03.148" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220131 15:12:01.135" endtime="20220131 15:12:03.148"/>
+</kw>
+<status status="PASS" starttime="20220131 15:12:01.032" endtime="20220131 15:12:03.148"/>
+</kw>
+<kw name="Verify Search Compilation" library="Search_Product">
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:12:04.157" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:12:03.149" endtime="20220131 15:12:04.157"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${SEARCH-RESULT_VERIFICATION_TEXT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220131 15:12:04.157" endtime="20220131 15:12:04.185"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:12:05.187" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:12:04.185" endtime="20220131 15:12:05.187"/>
+</kw>
+<status status="PASS" starttime="20220131 15:12:03.148" endtime="20220131 15:12:05.187"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:52.262" endtime="20220131 15:12:05.188"/>
+</kw>
+<kw name="Add Product To Cart" library="Add_To_Cart">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${add_to_cart}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 15:12:05.189" level="INFO">Clicking element 'xpath=//div[3]/div[2]/div[1]/section'.</msg>
+<status status="PASS" starttime="20220131 15:12:05.189" endtime="20220131 15:12:05.525"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:12:07.540" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220131 15:12:05.526" endtime="20220131 15:12:07.540"/>
+</kw>
+<status status="PASS" starttime="20220131 15:12:05.188" endtime="20220131 15:12:07.541"/>
+</kw>
+<kw name="Add To Cart Verification" library="Add_To_Cart">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${Cart_Window-Text}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220131 15:12:07.543" endtime="20220131 15:12:07.593"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:12:08.594" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:12:07.593" endtime="20220131 15:12:08.594"/>
+</kw>
+<status status="PASS" starttime="20220131 15:12:07.542" endtime="20220131 15:12:08.595"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:52.262" endtime="20220131 15:12:08.595"/>
+</kw>
+<kw name="Click Promo Code" library="Add_Promo_Code">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${promo_code-btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220131 15:12:08.597" level="INFO">Clicking button 'xpath=//section/div[1]/button'.</msg>
+<status status="PASS" starttime="20220131 15:12:08.597" endtime="20220131 15:12:08.694"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:12:09.703" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:12:08.694" endtime="20220131 15:12:09.703"/>
+</kw>
+<status status="PASS" starttime="20220131 15:12:08.596" endtime="20220131 15:12:09.704"/>
+</kw>
+<kw name="Provide Promo Code" library="Add_Promo_Code">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${promo_code-bar}</arg>
+<arg>${promo_code}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 15:12:09.709" level="INFO">Typing text 'PrOmOcOdE' into text field 'xpath=//form/span/input'.</msg>
+<status status="PASS" starttime="20220131 15:12:09.707" endtime="20220131 15:12:09.884"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:12:10.895" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:12:09.885" endtime="20220131 15:12:10.895"/>
+</kw>
+<status status="PASS" starttime="20220131 15:12:09.705" endtime="20220131 15:12:10.896"/>
+</kw>
+<kw name="Submit Promo Code" library="Add_Promo_Code">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${promo_code_submit-btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220131 15:12:10.899" level="INFO">Clicking button 'xpath=//section/div[2]/form/span/button[1]'.</msg>
+<status status="PASS" starttime="20220131 15:12:10.898" endtime="20220131 15:12:11.046"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 15:12:12.060" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220131 15:12:11.046" endtime="20220131 15:12:12.060"/>
+</kw>
+<status status="PASS" starttime="20220131 15:12:10.897" endtime="20220131 15:12:12.061"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:52.262" endtime="20220131 15:12:12.061"/>
+</kw>
+<kw name="End Web Test" library="Open_Browser" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220131 15:12:12.065" endtime="20220131 15:12:14.356"/>
+</kw>
+<status status="PASS" starttime="20220131 15:12:12.063" endtime="20220131 15:12:14.356"/>
+</kw>
+<status status="PASS" starttime="20220131 15:11:50.850" endtime="20220131 15:12:14.356"/>
+</test>
+<doc>This is a basic test of chaldal to check different functionalities</doc>
+<status status="PASS" starttime="20220131 15:09:12.524" endtime="20220131 15:12:14.356"/>
+</suite>
+<statistics>
+<total>
+<stat pass="9" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="9" fail="0" skip="0" id="s1" name="Index">Index</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
